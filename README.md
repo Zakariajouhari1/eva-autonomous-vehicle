@@ -46,7 +46,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 | **Simulator** | Python + ROS2 | Physics-based vehicle simulation for testing |
 
 <div align="center">
-  <img src="Docs/Images/HMI.png" alt="EVA HMI Interface" width="300"/>
+  <img src="Docs/Images/HMI.png" alt="EVA HMI Interface" width="400"/>
   <p><i>Professional Qt6/QML interface with real-time navigation</i></p>
 </div>
 
@@ -61,9 +61,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 - **GPS ↔ Local Conversion**: Accurate coordinate transformation
 - **Real-time Planning**: ~100-300ms computation time
 
-<div align="center">
-  <img src="docs/images/trajectory_planning.png" alt="Trajectory Planning" width="500"/>
-</div>
+
 
 ### 🖥️ Professional HMI (Qt6/QML)
 - **Interactive Map**: OpenStreetMap with route visualization
@@ -72,9 +70,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 - **Live Navigation**: Distance, ETA, progress tracking
 - **Modern UI/UX**: Professional automotive-grade interface
 
-<div align="center">
-  <img src="docs/images/dashboard.png" alt="Vehicle Dashboard" width="500"/>
-</div>
+
 
 ### 🚙 Vehicle Simulator
 - **Physics-based**: Realistic acceleration and movement
@@ -82,30 +78,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 - **Odometry Publishing**: Real-time position updates
 - **Configurable Parameters**: Speed, acceleration, vehicle dynamics
 
----
 
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td><img src="docs/images/map_view.png" alt="Map View" width="400"/></td>
-    <td><img src="docs/images/route_info.png" alt="Route Info" width="400"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Interactive Map View</b></td>
-    <td align="center"><b>Route Information Panel</b></td>
-  </tr>
-  <tr>
-    <td><img src="docs/images/vehicle_status.png" alt="Vehicle Status" width="400"/></td>
-    <td><img src="docs/images/navigation_active.png" alt="Navigation" width="400"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Vehicle Status Panel</b></td>
-    <td align="center"><b>Active Navigation</b></td>
-  </tr>
-</table>
-
----
 
 ## 🚀 Quick Start
 
