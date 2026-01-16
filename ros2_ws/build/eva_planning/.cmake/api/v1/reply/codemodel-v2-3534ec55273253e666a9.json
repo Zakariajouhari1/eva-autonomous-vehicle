@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a838ceb7c47c05e3b0c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "eva_planning",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cubic_spline_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cubic_spline_planner-9fbae4a66bc3df2a983d.json",
+					"name" : "cubic_spline_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "eva_planning_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eva_planning_node-8345bd1536ac3f8b4f60.json",
+					"name" : "eva_planning_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "eva_planning_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eva_planning_uninstall-46fdc62f6b2e899657b5.json",
+					"name" : "eva_planning_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fbbe7e8c72b5d9a3c0ff.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ziko/ros2_ws/build/eva_planning",
+		"source" : "/home/ziko/ros2_ws/src/eva_planning"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

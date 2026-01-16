@@ -1,0 +1,36 @@
+[ 50%] Built target cubic_spline_planner
+[35m[1mConsolidate compiler generated dependencies of target eva_planning_node[0m
+[ 75%] [32m[1mLinking CXX executable eva_planning_node[0m
+[100%] Built target eva_planning_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+-- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml

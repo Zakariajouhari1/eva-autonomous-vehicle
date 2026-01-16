@@ -1,0 +1,99 @@
+[0.009s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ziko/ros2_ws/src/eva_planning -DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning
+[0.087s] -- The C compiler identification is GNU 11.4.0
+[0.160s] -- The CXX compiler identification is GNU 11.4.0
+[0.169s] -- Detecting C compiler ABI info
+[0.260s] -- Detecting C compiler ABI info - done
+[0.270s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.271s] -- Detecting C compile features
+[0.271s] -- Detecting C compile features - done
+[0.275s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.388s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.389s] -- Detecting CXX compile features
+[0.389s] -- Detecting CXX compile features - done
+[0.392s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.574s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.674s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.720s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.725s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.733s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.747s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.764s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.810s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.812s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.909s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.942s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.991s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.000s] -- Looking for pthread.h
+[1.099s] -- Looking for pthread.h - found
+[1.100s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.194s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.195s] -- Found Threads: TRUE  
+[1.258s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.292s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.312s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.336s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.348s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.363s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.364s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.364s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.568s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.572s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+[1.655s] -- Configuring done
+[1.671s] -- Generating done
+[1.676s] -- Build files have been written to: /home/ziko/ros2_ws/build/eva_planning
+[1.691s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ziko/ros2_ws/src/eva_planning -DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning
+[1.692s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[1.754s] [ 25%] [32mBuilding CXX object CMakeFiles/cubic_spline_planner.dir/src/cubic_spline_planner.cpp.o[0m
+[2.033s] [01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<eva_planning::Point2D> eva_planning::CubicSplinePlanner::generateLocalTrajectory(const eva_planning::Point2D&, double, const std::vector<eva_planning::Point2D>&, const std::vector<eva_planning::Obstacle>&)[m[K’:
+[2.033s] [01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:105:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_heading[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.033s]   105 |     const Point2D& current_pos, [01;35m[Kdouble current_heading[m[K,
+[2.033s]       |                                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.273s] [ 50%] [32m[1mLinking CXX static library libcubic_spline_planner.a[0m
+[2.353s] [ 50%] Built target cubic_spline_planner
+[2.383s] [ 75%] [32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o[0m
+[5.398s] [01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:[m[K In member function ‘[01m[Kvoid EVAPlanningNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.398s] [01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:132:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.399s]   132 |     void mapCallback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K) {
+[5.399s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[28.652s] [100%] [32m[1mLinking CXX executable eva_planning_node[0m
+[29.093s] [100%] Built target eva_planning_node
+[29.111s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[29.127s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning
+[29.138s] -- Install configuration: ""
+[29.138s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+[29.138s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+[29.140s] -- Set runtime path of "/home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node" to ""
+[29.140s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include/
+[29.140s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning
+[29.140s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+[29.141s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+[29.148s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+[29.149s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+[29.149s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch
+[29.149s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+[29.149s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+[29.150s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config
+[29.150s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+[29.150s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+[29.150s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+[29.151s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+[29.151s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+[29.151s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+[29.152s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+[29.152s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+[29.152s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+[29.152s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+[29.152s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+[29.153s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+[29.153s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+[29.153s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+[29.153s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+[29.154s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+[29.154s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+[29.154s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.154s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[29.155s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+[29.155s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+[29.155s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml
+[29.158s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning

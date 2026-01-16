@@ -1,0 +1,46 @@
+[0.014s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target cubic_spline_planner[0m
+[0.088s] [ 50%] Built target cubic_spline_planner
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target eva_planning_node[0m
+[0.124s] [ 75%] [32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o[0m
+[25.361s] [100%] [32m[1mLinking CXX executable eva_planning_node[0m
+[25.739s] [100%] Built target eva_planning_node
+[25.755s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[25.771s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning
+[25.779s] -- Install configuration: ""
+[25.780s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+[25.780s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+[25.782s] -- Set runtime path of "/home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node" to ""
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include/
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+[25.782s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+[25.783s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+[25.784s] -- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+[25.784s] -- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml
+[25.785s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning

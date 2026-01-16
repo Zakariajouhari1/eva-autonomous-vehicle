@@ -1,0 +1,19 @@
+[0.459s] Invoking command in '/home/ziko/ros2_ws/build/vehicle_simulator': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ziko/ros2_ws/build/vehicle_simulator/build --no-deps symlink_data --force
+[0.615s] running develop
+[0.692s] running egg_info
+[0.692s] writing vehicle_simulator.egg-info/PKG-INFO
+[0.692s] writing dependency_links to vehicle_simulator.egg-info/dependency_links.txt
+[0.692s] writing entry points to vehicle_simulator.egg-info/entry_points.txt
+[0.692s] writing requirements to vehicle_simulator.egg-info/requires.txt
+[0.692s] writing top-level names to vehicle_simulator.egg-info/top_level.txt
+[0.693s] reading manifest file 'vehicle_simulator.egg-info/SOURCES.txt'
+[0.694s] writing manifest file 'vehicle_simulator.egg-info/SOURCES.txt'
+[0.695s] running build_ext
+[0.695s] Creating /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle-simulator.egg-link (link to .)
+[0.695s] Installing vehicle_simulator script to /home/ziko/ros2_ws/install/vehicle_simulator/lib/vehicle_simulator
+[0.695s] 
+[0.695s] Installed /home/ziko/ros2_ws/build/vehicle_simulator
+[0.695s] running symlink_data
+[0.696s] symbolically linking /home/ziko/ros2_ws/build/vehicle_simulator/resource/vehicle_simulator -> /home/ziko/ros2_ws/install/vehicle_simulator/share/ament_index/resource_index/packages
+[0.696s] symbolically linking /home/ziko/ros2_ws/build/vehicle_simulator/package.xml -> /home/ziko/ros2_ws/install/vehicle_simulator/share/vehicle_simulator
+[0.714s] Invoked command in '/home/ziko/ros2_ws/build/vehicle_simulator' returned '0': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ziko/ros2_ws/build/vehicle_simulator/build --no-deps symlink_data --force

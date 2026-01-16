@@ -1,0 +1,42 @@
+[0.765s] Invoking command in '/home/ziko/ros2_ws/src/vehicle_simulator': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_simulator build --build-base /home/ziko/ros2_ws/build/vehicle_simulator/build install --record /home/ziko/ros2_ws/build/vehicle_simulator/install.log --single-version-externally-managed install_data
+[1.144s] running egg_info
+[1.145s] creating ../../build/vehicle_simulator/vehicle_simulator.egg-info
+[1.145s] writing ../../build/vehicle_simulator/vehicle_simulator.egg-info/PKG-INFO
+[1.146s] writing dependency_links to ../../build/vehicle_simulator/vehicle_simulator.egg-info/dependency_links.txt
+[1.146s] writing entry points to ../../build/vehicle_simulator/vehicle_simulator.egg-info/entry_points.txt
+[1.146s] writing requirements to ../../build/vehicle_simulator/vehicle_simulator.egg-info/requires.txt
+[1.146s] writing top-level names to ../../build/vehicle_simulator/vehicle_simulator.egg-info/top_level.txt
+[1.146s] writing manifest file '../../build/vehicle_simulator/vehicle_simulator.egg-info/SOURCES.txt'
+[1.148s] reading manifest file '../../build/vehicle_simulator/vehicle_simulator.egg-info/SOURCES.txt'
+[1.149s] writing manifest file '../../build/vehicle_simulator/vehicle_simulator.egg-info/SOURCES.txt'
+[1.149s] running build
+[1.149s] running build_py
+[1.149s] creating /home/ziko/ros2_ws/build/vehicle_simulator/build
+[1.149s] creating /home/ziko/ros2_ws/build/vehicle_simulator/build/lib
+[1.150s] creating /home/ziko/ros2_ws/build/vehicle_simulator/build/lib/vehicle_simulator
+[1.150s] copying vehicle_simulator/vehicle_simulator.py -> /home/ziko/ros2_ws/build/vehicle_simulator/build/lib/vehicle_simulator
+[1.150s] copying vehicle_simulator/__init__.py -> /home/ziko/ros2_ws/build/vehicle_simulator/build/lib/vehicle_simulator
+[1.150s] running install
+[1.150s] running install_lib
+[1.151s] creating /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator
+[1.151s] copying /home/ziko/ros2_ws/build/vehicle_simulator/build/lib/vehicle_simulator/vehicle_simulator.py -> /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator
+[1.151s] copying /home/ziko/ros2_ws/build/vehicle_simulator/build/lib/vehicle_simulator/__init__.py -> /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator
+[1.151s] byte-compiling /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator/vehicle_simulator.py to vehicle_simulator.cpython-310.pyc
+[1.151s] byte-compiling /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator/__init__.py to __init__.cpython-310.pyc
+[1.151s]   File "/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator/vehicle_simulator.py", line 18
+[1.151s]     // État de l'interface
+[1.152s]                 ^
+[1.152s] SyntaxError: unterminated string literal (detected at line 18)
+[1.152s] 
+[1.152s] running install_data
+[1.152s] creating /home/ziko/ros2_ws/install/vehicle_simulator/share/ament_index
+[1.152s] creating /home/ziko/ros2_ws/install/vehicle_simulator/share/ament_index/resource_index
+[1.152s] creating /home/ziko/ros2_ws/install/vehicle_simulator/share/ament_index/resource_index/packages
+[1.152s] copying resource/vehicle_simulator -> /home/ziko/ros2_ws/install/vehicle_simulator/share/ament_index/resource_index/packages
+[1.152s] copying package.xml -> /home/ziko/ros2_ws/install/vehicle_simulator/share/vehicle_simulator
+[1.152s] running install_egg_info
+[1.153s] Copying ../../build/vehicle_simulator/vehicle_simulator.egg-info to /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator-0.0.0-py3.10.egg-info
+[1.154s] running install_scripts
+[1.172s] Installing vehicle_simulator script to /home/ziko/ros2_ws/install/vehicle_simulator/lib/vehicle_simulator
+[1.172s] writing list of installed files to '/home/ziko/ros2_ws/build/vehicle_simulator/install.log'
+[1.190s] Invoked command in '/home/ziko/ros2_ws/src/vehicle_simulator' returned '0': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_simulator build --build-base /home/ziko/ros2_ws/build/vehicle_simulator/build install --record /home/ziko/ros2_ws/build/vehicle_simulator/install.log --single-version-externally-managed install_data

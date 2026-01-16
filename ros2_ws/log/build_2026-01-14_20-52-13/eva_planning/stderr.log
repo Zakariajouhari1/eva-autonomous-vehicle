@@ -1,0 +1,8 @@
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<eva_planning::Point2D> eva_planning::CubicSplinePlanner::generateLocalTrajectory(const eva_planning::Point2D&, double, const std::vector<eva_planning::Point2D>&, const std::vector<eva_planning::Obstacle>&)[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:105:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_heading[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  105 |     const Point2D& current_pos, [01;35m[Kdouble current_heading[m[K,
+      |                                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:[m[K In member function ‘[01m[Kvoid EVAPlanningNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:132:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  132 |     void mapCallback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K) {
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

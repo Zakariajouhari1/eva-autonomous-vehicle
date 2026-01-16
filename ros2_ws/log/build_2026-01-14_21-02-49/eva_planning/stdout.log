@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target cubic_spline_planner[0m
+[ 50%] Built target cubic_spline_planner
+[35m[1mConsolidate compiler generated dependencies of target eva_planning_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable eva_planning_node[0m
+[100%] Built target eva_planning_node
+-- Install configuration: ""
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+-- Set runtime path of "/home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node" to ""
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include/
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml

@@ -1,0 +1,17 @@
+[0.471s] Invoking command in '/home/ziko/ros2_ws/build/vehicle_simulator': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ziko/ros2_ws/build/vehicle_simulator/build --no-deps symlink_data
+[0.661s] running develop
+[0.742s] running egg_info
+[0.743s] writing vehicle_simulator.egg-info/PKG-INFO
+[0.743s] writing dependency_links to vehicle_simulator.egg-info/dependency_links.txt
+[0.743s] writing entry points to vehicle_simulator.egg-info/entry_points.txt
+[0.743s] writing requirements to vehicle_simulator.egg-info/requires.txt
+[0.743s] writing top-level names to vehicle_simulator.egg-info/top_level.txt
+[0.744s] reading manifest file 'vehicle_simulator.egg-info/SOURCES.txt'
+[0.745s] writing manifest file 'vehicle_simulator.egg-info/SOURCES.txt'
+[0.745s] running build_ext
+[0.746s] Creating /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle-simulator.egg-link (link to .)
+[0.746s] Installing vehicle_simulator script to /home/ziko/ros2_ws/install/vehicle_simulator/lib/vehicle_simulator
+[0.746s] 
+[0.747s] Installed /home/ziko/ros2_ws/build/vehicle_simulator
+[0.747s] running symlink_data
+[0.772s] Invoked command in '/home/ziko/ros2_ws/build/vehicle_simulator' returned '0': PYTHONPATH=/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ziko/ros2_ws/build/vehicle_simulator/build --no-deps symlink_data

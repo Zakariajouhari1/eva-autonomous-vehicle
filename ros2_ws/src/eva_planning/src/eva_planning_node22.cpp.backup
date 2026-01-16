@@ -1,0 +1,284 @@
+// eva_planning_node.cpp
+// FIXED: Only plan when new goal arrives, not continuously
+
+#include <rclcpp/rclcpp.hpp>
+#include <nav_msgs/msg/path.hpp>
+#include <nav_msgs/msg/odometry.hpp>
+#include <nav_msgs/msg/occupancy_grid.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <std_msgs/msg/string.hpp>
+
+#include "eva_planning/osrm_client.hpp"
+#include "eva_planning/coordinate_converter.hpp"
+#include "eva_planning/cubic_spline_planner.hpp"
+
+#include <memory>
+#include <vector>
+#include <chrono>
+
+using namespace std::chrono_literals;
+
+class EVAPlanningNode : public rclcpp::Node {
+public:
+    EVAPlanningNode() : Node("eva_planning_node") {
+        // Parameters
+        this->declare_parameter("local_planner_rate", 10.0);
+        this->declare_parameter("robot_radius", 1.0);
+        this->declare_parameter("max_speed", 5.0);
+        this->declare_parameter("lookahead_distance", 10.0);
+        this->declare_parameter("obstacle_avoidance_radius", 2.0);
+        this->declare_parameter("origin_latitude", 33.5731);
+        this->declare_parameter("origin_longitude", -7.5898);
+        this->declare_parameter("osrm_server", "http://router.project-osrm.org");
+        
+        double local_rate = this->get_parameter("local_planner_rate").as_double();
+        double max_speed = this->get_parameter("max_speed").as_double();
+        double lookahead = this->get_parameter("lookahead_distance").as_double();
+        double obs_radius = this->get_parameter("obstacle_avoidance_radius").as_double();
+        double origin_lat = this->get_parameter("origin_latitude").as_double();
+        double origin_lon = this->get_parameter("origin_longitude").as_double();
+        std::string osrm_server = this->get_parameter("osrm_server").as_string();
+        
+        // Initialize OSRM client
+        osrm_client_ = std::make_unique<eva_planning::OSRMClient>(osrm_server);
+        
+        // Initialize coordinate converter
+        coord_converter_ = std::make_unique<eva_planning::CoordinateConverter>(
+            origin_lat, origin_lon
+        );
+        
+        // Initialize spline planner
+        spline_planner_ = std::make_unique<eva_planning::CubicSplinePlanner>(
+            max_speed, 2.0, 1.0, lookahead);
+        spline_planner_->setObstacleAvoidanceRadius(obs_radius);
+        
+        // Subscribers
+        odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+            "/vehicle/odom", 10,
+            std::bind(&EVAPlanningNode::odomCallback, this, std::placeholders::_1));
+        
+        goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+            "/goal_pose", 10,
+            std::bind(&EVAPlanningNode::goalCallback, this, std::placeholders::_1));
+        
+        map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+            "/map", 10,
+            std::bind(&EVAPlanningNode::mapCallback, this, std::placeholders::_1));
+        
+        // Publishers
+        global_path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/planning/global_path", 10);
+        local_path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/planning/local_path", 10);
+        status_pub_ = this->create_publisher<std_msgs::msg::String>("/planning/status", 10);
+        
+        // ONLY local planner timer (runs at 10 Hz for smooth tracking)
+        local_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(static_cast<int>(1000.0 / local_rate)),
+            std::bind(&EVAPlanningNode::localPlanningCallback, this));
+        
+        RCLCPP_INFO(this->get_logger(), "EVA Planning Node initialized");
+        RCLCPP_INFO(this->get_logger(), "Using OSRM routing service: %s", osrm_server.c_str());
+        RCLCPP_INFO(this->get_logger(), "Origin: (%.6f, %.6f)", origin_lat, origin_lon);
+        
+        // Dummy odometry for testing
+        nav_msgs::msg::Odometry dummy_odom;
+        dummy_odom.pose.pose.position.x = 0.0;
+        dummy_odom.pose.pose.position.y = 0.0;
+        dummy_odom.pose.pose.orientation.w = 1.0;
+        current_odom_ = dummy_odom;
+        has_odom_ = true;
+        
+        RCLCPP_INFO(this->get_logger(), "Ready to receive goals!");
+    }
+
+private:
+    std::unique_ptr<eva_planning::OSRMClient> osrm_client_;
+    std::unique_ptr<eva_planning::CoordinateConverter> coord_converter_;
+    std::unique_ptr<eva_planning::CubicSplinePlanner> spline_planner_;
+    
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr goal_sub_;
+    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
+    
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr global_path_pub_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr local_path_pub_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr status_pub_;
+    
+    rclcpp::TimerBase::SharedPtr local_timer_;
+    
+    nav_msgs::msg::Odometry current_odom_;
+    geometry_msgs::msg::PoseStamped current_goal_;
+    std::vector<eva_planning::Point2D> global_path_;
+    std::vector<eva_planning::Obstacle> detected_obstacles_;
+    bool has_odom_ = false;
+    bool has_goal_ = false;
+    
+    void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg) {
+        current_odom_ = *msg;
+        has_odom_ = true;
+    }
+    
+    void goalCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+        current_goal_ = *msg;
+        has_goal_ = true;
+        RCLCPP_INFO(this->get_logger(), "New goal received: (%.2f, %.2f)", 
+                    msg->pose.position.x, msg->pose.position.y);
+        
+        // Plan ONCE when new goal arrives
+        planRoute();
+    }
+    
+    void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr /*msg*/) {
+        RCLCPP_INFO_ONCE(this->get_logger(), "Map received (not used with OSRM)");
+    }
+    
+    void planRoute() {
+        if (!has_odom_ || !has_goal_) {
+            RCLCPP_WARN(this->get_logger(), "Cannot plan: missing odometry or goal");
+            return;
+        }
+        
+        auto start_time = std::chrono::high_resolution_clock::now();
+        
+        // Get current position and goal
+        double start_x = current_odom_.pose.pose.position.x;
+        double start_y = current_odom_.pose.pose.position.y;
+        double goal_x = current_goal_.pose.position.x;
+        double goal_y = current_goal_.pose.position.y;
+        
+        RCLCPP_INFO(this->get_logger(), "Planning route...");
+        RCLCPP_INFO(this->get_logger(), "  Start: (%.2f, %.2f)", start_x, start_y);
+        RCLCPP_INFO(this->get_logger(), "  Goal: (%.2f, %.2f)", goal_x, goal_y);
+        
+        // Convert to GPS
+        auto [start_lat, start_lon] = coord_converter_->odomToGps(start_x, start_y);
+        auto [goal_lat, goal_lon] = coord_converter_->odomToGps(goal_x, goal_y);
+        
+        RCLCPP_INFO(this->get_logger(), "  GPS: (%.6f, %.6f) -> (%.6f, %.6f)", 
+                    start_lat, start_lon, goal_lat, goal_lon);
+        
+        // Get route from OSRM
+        eva_planning::RouteInfo route;
+        try {
+            route = osrm_client_->getRoute(start_lat, start_lon, goal_lat, goal_lon);
+        } catch (const std::exception& e) {
+            RCLCPP_ERROR(this->get_logger(), "OSRM error: %s", e.what());
+            publishStatus("FAILED: OSRM error");
+            return;
+        }
+        
+        if (route.waypoints.empty()) {
+            RCLCPP_WARN(this->get_logger(), "No route found!");
+            publishStatus("FAILED: No route found");
+            return;
+        }
+        
+        // Convert waypoints to local frame
+        global_path_.clear();
+        for (const auto& wp : route.waypoints) {
+            auto [x, y] = coord_converter_->gpsToOdom(wp.latitude, wp.longitude);
+            global_path_.emplace_back(x, y);
+        }
+        
+        // Publish path
+        nav_msgs::msg::Path path_msg;
+        path_msg.header.stamp = this->now();
+        path_msg.header.frame_id = "odom";
+        
+        for (const auto& point : global_path_) {
+            geometry_msgs::msg::PoseStamped pose;
+            pose.header = path_msg.header;
+            pose.pose.position.x = point.x;
+            pose.pose.position.y = point.y;
+            pose.pose.orientation.w = 1.0;
+            path_msg.poses.push_back(pose);
+        }
+        
+        global_path_pub_->publish(path_msg);
+        
+        auto end_time = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
+        
+        RCLCPP_INFO(this->get_logger(), "✓ Route computed!");
+        RCLCPP_INFO(this->get_logger(), "  Distance: %.2f km", route.total_distance / 1000.0);
+        RCLCPP_INFO(this->get_logger(), "  Duration: %.1f min", route.total_duration / 60.0);
+        RCLCPP_INFO(this->get_logger(), "  Waypoints: %zu", route.waypoints.size());
+        RCLCPP_INFO(this->get_logger(), "  Time: %ld ms", duration.count());
+        
+        publishStatus("SUCCESS: Real road route computed");
+    }
+    
+    void localPlanningCallback() {
+        if (!has_odom_ || global_path_.empty()) return;
+        
+        double current_x = current_odom_.pose.pose.position.x;
+        double current_y = current_odom_.pose.pose.position.y;
+        
+        double qx = current_odom_.pose.pose.orientation.x;
+        double qy = current_odom_.pose.pose.orientation.y;
+        double qz = current_odom_.pose.pose.orientation.z;
+        double qw = current_odom_.pose.pose.orientation.w;
+        double heading = std::atan2(2.0 * (qw * qz + qx * qy),
+                                    1.0 - 2.0 * (qy * qy + qz * qz));
+        
+        eva_planning::Point2D current_pos(current_x, current_y);
+        
+        auto local_traj = spline_planner_->generateLocalTrajectory(
+            current_pos, heading, global_path_, detected_obstacles_);
+        
+        nav_msgs::msg::Path path_msg;
+        path_msg.header.stamp = this->now();
+        path_msg.header.frame_id = "odom";
+        
+        for (const auto& point : local_traj) {
+            geometry_msgs::msg::PoseStamped pose;
+            pose.header = path_msg.header;
+            pose.pose.position.x = point.x;
+            pose.pose.position.y = point.y;
+            pose.pose.orientation.w = 1.0;
+            path_msg.poses.push_back(pose);
+        }
+        
+        local_path_pub_->publish(path_msg);
+    }
+    
+    void publishStatus(const std::string& status) {
+        std_msgs::msg::String msg;
+        msg.data = status;
+        status_pub_->publish(msg);
+    }
+};
+// Dans eva_planning_node.cpp
+class EVAPlanningNode {
+private:
+    geometry_msgs::msg::PoseStamped last_goal_;
+    bool has_goal_ = false;
+    
+public:
+    void goalCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+        // Vérifier si c'est un nouveau goal
+        if (has_goal_ &&
+            std::abs(last_goal_.pose.position.x - msg->pose.position.x) < 0.01 &&
+            std::abs(last_goal_.pose.position.y - msg->pose.position.y) < 0.01) {
+            RCLCPP_DEBUG(this->get_logger(), "Same goal, skipping...");
+            return;  // Même goal, ne pas recalculer
+        }
+        
+        last_goal_ = *msg;
+        has_goal_ = true;
+        
+        RCLCPP_INFO(this->get_logger(), "New goal received: (%.2f, %.2f)", 
+                    msg->pose.position.x, msg->pose.position.y);
+        
+        // ... calcul de trajectoire ...
+        
+        // Publier UNE SEULE FOIS
+        global_path_pub_->publish(path_msg);
+    }
+};
+int main(int argc, char** argv) {
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<EVAPlanningNode>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}

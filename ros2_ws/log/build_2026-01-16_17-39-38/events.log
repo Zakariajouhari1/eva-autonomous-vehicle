@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000170] (eva_planning) JobQueued: {'identifier': 'eva_planning', 'dependencies': OrderedDict()}
+[0.000200] (vehicle_simulator) JobQueued: {'identifier': 'vehicle_simulator', 'dependencies': OrderedDict()}
+[0.000219] (eva_planning) JobStarted: {'identifier': 'eva_planning'}
+[0.004685] (vehicle_simulator) JobStarted: {'identifier': 'vehicle_simulator'}
+[0.008840] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'cmake'}
+[0.010064] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '/home/ziko/ros2_ws/src/eva_planning', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QML_IMPORT_PATH', '/home/ziko/Qt/6.10.1/gcc_64/qml'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '29705'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ziko/Qt/6.10.1/gcc_64/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/29683,unix/ziko-Latitude-5430:/tmp/.ICE-unix/29683'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b8e534cd_91d7_4249_b57a_62ec4b8d4f42'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.141'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/home/ziko/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('QT_PLUGIN_PATH', '/home/ziko/Qt/6.10.1/gcc_64/plugins'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.037435] (eva_planning) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099620] (-) TimerEvent: {}
+[0.145831] (eva_planning) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.161100] (eva_planning) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.190518] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.192990] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.198409] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.199711] (-) TimerEvent: {}
+[0.208073] (eva_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.220309] (eva_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.261626] (eva_planning) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.263828] (eva_planning) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299828] (-) TimerEvent: {}
+[0.353989] (eva_planning) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.398982] (eva_planning) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.400055] (-) TimerEvent: {}
+[0.426341] (eva_planning) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.442857] (eva_planning) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.461430] (eva_planning) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.466809] (eva_planning) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.471725] (eva_planning) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.474488] (eva_planning) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.475427] (vehicle_simulator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ziko/ros2_ws/build/vehicle_simulator/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ziko/ros2_ws/build/vehicle_simulator', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QML_IMPORT_PATH': '/home/ziko/Qt/6.10.1/gcc_64/qml', 'USER': 'ziko', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ziko', 'OLDPWD': '/home/ziko', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '29705', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ziko', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ziko', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/ziko/Qt/6.10.1/gcc_64/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/29683,unix/ziko-Latitude-5430:/tmp/.ICE-unix/29683', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b8e534cd_91d7_4249_b57a_62ec4b8d4f42', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.141', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ziko/ros2_ws/build/vehicle_simulator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/home/ziko/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ziko/ros2_ws/build/vehicle_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'QT_PLUGIN_PATH': '/home/ziko/Qt/6.10.1/gcc_64/plugins', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.500197] (-) TimerEvent: {}
+[0.600513] (-) TimerEvent: {}
+[0.661092] (eva_planning) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.665972] (vehicle_simulator) StdoutLine: {'line': b'running develop\n'}
+[0.673339] (eva_planning) StdoutLine: {'line': b'-- Generating done\n'}
+[0.676625] (eva_planning) StdoutLine: {'line': b'-- Build files have been written to: /home/ziko/ros2_ws/build/eva_planning\n'}
+[0.685267] (eva_planning) CommandEnded: {'returncode': 0}
+[0.685860] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'build'}
+[0.685887] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ziko/ros2_ws/build/eva_planning', '--', '-j12', '-l12'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QML_IMPORT_PATH', '/home/ziko/Qt/6.10.1/gcc_64/qml'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '29705'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ziko/Qt/6.10.1/gcc_64/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/29683,unix/ziko-Latitude-5430:/tmp/.ICE-unix/29683'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b8e534cd_91d7_4249_b57a_62ec4b8d4f42'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.141'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/home/ziko/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('QT_PLUGIN_PATH', '/home/ziko/Qt/6.10.1/gcc_64/plugins'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.700644] (-) TimerEvent: {}
+[0.721496] (eva_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cubic_spline_planner\x1b[0m\n'}
+[0.733838] (eva_planning) StdoutLine: {'line': b'[ 50%] Built target cubic_spline_planner\n'}
+[0.743279] (eva_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target eva_planning_node\x1b[0m\n'}
+[0.747256] (vehicle_simulator) StdoutLine: {'line': b'running egg_info\n'}
+[0.747496] (vehicle_simulator) StdoutLine: {'line': b'writing vehicle_simulator.egg-info/PKG-INFO\n'}
+[0.747609] (vehicle_simulator) StdoutLine: {'line': b'writing dependency_links to vehicle_simulator.egg-info/dependency_links.txt\n'}
+[0.747670] (vehicle_simulator) StdoutLine: {'line': b'writing entry points to vehicle_simulator.egg-info/entry_points.txt\n'}
+[0.747729] (vehicle_simulator) StdoutLine: {'line': b'writing requirements to vehicle_simulator.egg-info/requires.txt\n'}
+[0.747786] (vehicle_simulator) StdoutLine: {'line': b'writing top-level names to vehicle_simulator.egg-info/top_level.txt\n'}
+[0.748714] (vehicle_simulator) StdoutLine: {'line': b"reading manifest file 'vehicle_simulator.egg-info/SOURCES.txt'\n"}
+[0.749442] (vehicle_simulator) StdoutLine: {'line': b"writing manifest file 'vehicle_simulator.egg-info/SOURCES.txt'\n"}
+[0.750340] (vehicle_simulator) StdoutLine: {'line': b'running build_ext\n'}
+[0.750520] (vehicle_simulator) StdoutLine: {'line': b'Creating /home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle-simulator.egg-link (link to .)\n'}
+[0.751083] (vehicle_simulator) StdoutLine: {'line': b'Installing vehicle_simulator script to /home/ziko/ros2_ws/install/vehicle_simulator/lib/vehicle_simulator\n'}
+[0.751333] (vehicle_simulator) StdoutLine: {'line': b'\n'}
+[0.751395] (vehicle_simulator) StdoutLine: {'line': b'Installed /home/ziko/ros2_ws/build/vehicle_simulator\n'}
+[0.751486] (vehicle_simulator) StdoutLine: {'line': b'running symlink_data\n'}
+[0.771066] (eva_planning) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o\x1b[0m\n'}
+[0.776495] (vehicle_simulator) CommandEnded: {'returncode': 0}
+[0.799980] (vehicle_simulator) JobEnded: {'identifier': 'vehicle_simulator', 'rc': 0}
+[0.800716] (-) TimerEvent: {}
+[0.901168] (-) TimerEvent: {}
+[1.001718] (-) TimerEvent: {}
+[1.102236] (-) TimerEvent: {}
+[1.202722] (-) TimerEvent: {}
+[1.303192] (-) TimerEvent: {}
+[1.403783] (-) TimerEvent: {}
+[1.504225] (-) TimerEvent: {}
+[1.604527] (-) TimerEvent: {}
+[1.704819] (-) TimerEvent: {}
+[1.805177] (-) TimerEvent: {}
+[1.905441] (-) TimerEvent: {}
+[2.005810] (-) TimerEvent: {}
+[2.106181] (-) TimerEvent: {}
+[2.206446] (-) TimerEvent: {}
+[2.306753] (-) TimerEvent: {}
+[2.407133] (-) TimerEvent: {}
+[2.507506] (-) TimerEvent: {}
+[2.607886] (-) TimerEvent: {}
+[2.708273] (-) TimerEvent: {}
+[2.808637] (-) TimerEvent: {}
+[2.909011] (-) TimerEvent: {}
+[3.009489] (-) TimerEvent: {}
+[3.067952] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:251:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass EVAPlanningNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.068228] (eva_planning) StderrLine: {'line': b'  251 | class \x1b[01;31m\x1b[KEVAPlanningNode\x1b[m\x1b[K {\n'}
+[3.068295] (eva_planning) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.068350] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:21:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass EVAPlanningNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.068408] (eva_planning) StderrLine: {'line': b'   21 | class \x1b[01;36m\x1b[KEVAPlanningNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[3.068459] (eva_planning) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.109689] (-) TimerEvent: {}
+[3.210071] (-) TimerEvent: {}
+[3.310449] (-) TimerEvent: {}
+[3.410820] (-) TimerEvent: {}
+[3.511205] (-) TimerEvent: {}
+[3.611588] (-) TimerEvent: {}
+[3.711869] (-) TimerEvent: {}
+[3.812268] (-) TimerEvent: {}
+[3.912666] (-) TimerEvent: {}
+[4.012994] (-) TimerEvent: {}
+[4.113362] (-) TimerEvent: {}
+[4.213903] (-) TimerEvent: {}
+[4.314325] (-) TimerEvent: {}
+[4.414749] (-) TimerEvent: {}
+[4.515167] (-) TimerEvent: {}
+[4.615484] (-) TimerEvent: {}
+[4.715802] (-) TimerEvent: {}
+[4.816102] (-) TimerEvent: {}
+[4.916521] (-) TimerEvent: {}
+[5.016887] (-) TimerEvent: {}
+[5.117249] (-) TimerEvent: {}
+[5.217672] (-) TimerEvent: {}
+[5.318092] (-) TimerEvent: {}
+[5.418492] (-) TimerEvent: {}
+[5.518911] (-) TimerEvent: {}
+[5.619488] (-) TimerEvent: {}
+[5.719871] (-) TimerEvent: {}
+[5.820178] (-) TimerEvent: {}
+[5.920446] (-) TimerEvent: {}
+[6.020810] (-) TimerEvent: {}
+[6.121123] (-) TimerEvent: {}
+[6.221424] (-) TimerEvent: {}
+[6.321842] (-) TimerEvent: {}
+[6.422322] (-) TimerEvent: {}
+[6.522782] (-) TimerEvent: {}
+[6.623189] (-) TimerEvent: {}
+[6.644404] (eva_planning) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/eva_planning_node.dir/build.make:76: CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o] Error 1\n'}
+[6.644610] (eva_planning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/eva_planning_node.dir/all] Error 2\n'}
+[6.644676] (eva_planning) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.646710] (eva_planning) CommandEnded: {'returncode': 2}
+[6.655592] (eva_planning) JobEnded: {'identifier': 'eva_planning', 'rc': 2}
+[6.666285] (-) EventReactorShutdown: {}

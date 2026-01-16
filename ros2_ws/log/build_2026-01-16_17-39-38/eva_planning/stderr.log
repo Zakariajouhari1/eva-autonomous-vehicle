@@ -1,0 +1,9 @@
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:251:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass EVAPlanningNode[m[K’
+  251 | class [01;31m[KEVAPlanningNode[m[K {
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:21:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass EVAPlanningNode[m[K’
+   21 | class [01;36m[KEVAPlanningNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/eva_planning_node.dir/build.make:76: CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/eva_planning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

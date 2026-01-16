@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ziko/ros2_ws/build/eva_planning/libcubic_spline_planner.a" "TARGETS" "cubic_spline_planner" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

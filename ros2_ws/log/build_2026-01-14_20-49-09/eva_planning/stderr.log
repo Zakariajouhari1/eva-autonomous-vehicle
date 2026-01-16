@@ -1,0 +1,17 @@
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<eva_planning::Point2D> eva_planning::CubicSplinePlanner::generateLocalTrajectory(const eva_planning::Point2D&, double, const std::vector<eva_planning::Point2D>&, const std::vector<eva_planning::Obstacle>&)[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:105:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_heading[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  105 |     const Point2D& current_pos, [01;35m[Kdouble current_heading[m[K,
+      |                                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:[m[K In constructor ‘[01m[KEVAPlanningNode::EVAPlanningNode()[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:68:41:[m[K [01;31m[Kerror: [m[K‘[01m[KmapCallback[m[K’ is not a member of ‘[01m[KEVAPlanningNode[m[K’
+   68 |             std::bind(&EVAPlanningNode::[01;31m[KmapCallback[m[K, this, std::placeholders::_1));
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:32:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmap_res[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   32 |         double [01;35m[Kmap_res[m[K = this->get_parameter("map_resolution").as_double();
+      |                [01;35m[K^~~~~~~[m[K
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:33:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krobot_radius[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   33 |         double [01;35m[Krobot_radius[m[K = this->get_parameter("robot_radius").as_double();
+      |                [01;35m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/eva_planning_node.dir/build.make:76: CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/eva_planning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

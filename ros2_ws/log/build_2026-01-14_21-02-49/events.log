@@ -1,0 +1,310 @@
+[0.000000] (-) TimerEvent: {}
+[0.000461] (eva_planning) JobQueued: {'identifier': 'eva_planning', 'dependencies': OrderedDict()}
+[0.000514] (eva_planning) JobStarted: {'identifier': 'eva_planning'}
+[0.008000] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'cmake'}
+[0.009760] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'build'}
+[0.009828] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ziko/ros2_ws/build/eva_planning', '--', '-j12', '-l12'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ziko/ros2_ws/install/eva_planning/lib:/home/ziko/ros2_ws1/install/eva_planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '21610'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ziko/ros2_ws/install:/home/ziko/ros2_ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/1942,unix/ziko-Latitude-5430:/tmp/.ICE-unix/1942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6932fa64_6ffe_4251_b293_a13c181c1b93'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E96EJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ziko/ros2_ws/install/eva_planning:/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ziko/ros2_ws/install/eva_planning:/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble')]), 'shell': False}
+[0.072697] (eva_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cubic_spline_planner\x1b[0m\n'}
+[0.088266] (eva_planning) StdoutLine: {'line': b'[ 50%] Built target cubic_spline_planner\n'}
+[0.099261] (-) TimerEvent: {}
+[0.101694] (eva_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target eva_planning_node\x1b[0m\n'}
+[0.124570] (eva_planning) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o\x1b[0m\n'}
+[0.199518] (-) TimerEvent: {}
+[0.299985] (-) TimerEvent: {}
+[0.400440] (-) TimerEvent: {}
+[0.500919] (-) TimerEvent: {}
+[0.601389] (-) TimerEvent: {}
+[0.701799] (-) TimerEvent: {}
+[0.802234] (-) TimerEvent: {}
+[0.902658] (-) TimerEvent: {}
+[1.003090] (-) TimerEvent: {}
+[1.103531] (-) TimerEvent: {}
+[1.203966] (-) TimerEvent: {}
+[1.304386] (-) TimerEvent: {}
+[1.404826] (-) TimerEvent: {}
+[1.505294] (-) TimerEvent: {}
+[1.605802] (-) TimerEvent: {}
+[1.706268] (-) TimerEvent: {}
+[1.806757] (-) TimerEvent: {}
+[1.907235] (-) TimerEvent: {}
+[2.007688] (-) TimerEvent: {}
+[2.108189] (-) TimerEvent: {}
+[2.208681] (-) TimerEvent: {}
+[2.309186] (-) TimerEvent: {}
+[2.409693] (-) TimerEvent: {}
+[2.510212] (-) TimerEvent: {}
+[2.610699] (-) TimerEvent: {}
+[2.711182] (-) TimerEvent: {}
+[2.811598] (-) TimerEvent: {}
+[2.912062] (-) TimerEvent: {}
+[3.012544] (-) TimerEvent: {}
+[3.113080] (-) TimerEvent: {}
+[3.213523] (-) TimerEvent: {}
+[3.313954] (-) TimerEvent: {}
+[3.414394] (-) TimerEvent: {}
+[3.514840] (-) TimerEvent: {}
+[3.615268] (-) TimerEvent: {}
+[3.715690] (-) TimerEvent: {}
+[3.816123] (-) TimerEvent: {}
+[3.916553] (-) TimerEvent: {}
+[4.016909] (-) TimerEvent: {}
+[4.117380] (-) TimerEvent: {}
+[4.217835] (-) TimerEvent: {}
+[4.318282] (-) TimerEvent: {}
+[4.418759] (-) TimerEvent: {}
+[4.519228] (-) TimerEvent: {}
+[4.619716] (-) TimerEvent: {}
+[4.720204] (-) TimerEvent: {}
+[4.820655] (-) TimerEvent: {}
+[4.921080] (-) TimerEvent: {}
+[5.021524] (-) TimerEvent: {}
+[5.121963] (-) TimerEvent: {}
+[5.222392] (-) TimerEvent: {}
+[5.322847] (-) TimerEvent: {}
+[5.423285] (-) TimerEvent: {}
+[5.523728] (-) TimerEvent: {}
+[5.624163] (-) TimerEvent: {}
+[5.724594] (-) TimerEvent: {}
+[5.825028] (-) TimerEvent: {}
+[5.925466] (-) TimerEvent: {}
+[6.025920] (-) TimerEvent: {}
+[6.126345] (-) TimerEvent: {}
+[6.226706] (-) TimerEvent: {}
+[6.327070] (-) TimerEvent: {}
+[6.427515] (-) TimerEvent: {}
+[6.527949] (-) TimerEvent: {}
+[6.628396] (-) TimerEvent: {}
+[6.728747] (-) TimerEvent: {}
+[6.829236] (-) TimerEvent: {}
+[6.929706] (-) TimerEvent: {}
+[7.030180] (-) TimerEvent: {}
+[7.130657] (-) TimerEvent: {}
+[7.231131] (-) TimerEvent: {}
+[7.331575] (-) TimerEvent: {}
+[7.432129] (-) TimerEvent: {}
+[7.532623] (-) TimerEvent: {}
+[7.633131] (-) TimerEvent: {}
+[7.733650] (-) TimerEvent: {}
+[7.834174] (-) TimerEvent: {}
+[7.934598] (-) TimerEvent: {}
+[8.035153] (-) TimerEvent: {}
+[8.135765] (-) TimerEvent: {}
+[8.236390] (-) TimerEvent: {}
+[8.337013] (-) TimerEvent: {}
+[8.437473] (-) TimerEvent: {}
+[8.537917] (-) TimerEvent: {}
+[8.638353] (-) TimerEvent: {}
+[8.738835] (-) TimerEvent: {}
+[8.839223] (-) TimerEvent: {}
+[8.939698] (-) TimerEvent: {}
+[9.040066] (-) TimerEvent: {}
+[9.140509] (-) TimerEvent: {}
+[9.240946] (-) TimerEvent: {}
+[9.341391] (-) TimerEvent: {}
+[9.441861] (-) TimerEvent: {}
+[9.542251] (-) TimerEvent: {}
+[9.642788] (-) TimerEvent: {}
+[9.743218] (-) TimerEvent: {}
+[9.843648] (-) TimerEvent: {}
+[9.944021] (-) TimerEvent: {}
+[10.044463] (-) TimerEvent: {}
+[10.144914] (-) TimerEvent: {}
+[10.245335] (-) TimerEvent: {}
+[10.345784] (-) TimerEvent: {}
+[10.446201] (-) TimerEvent: {}
+[10.546635] (-) TimerEvent: {}
+[10.647063] (-) TimerEvent: {}
+[10.747508] (-) TimerEvent: {}
+[10.847932] (-) TimerEvent: {}
+[10.948354] (-) TimerEvent: {}
+[11.048704] (-) TimerEvent: {}
+[11.149138] (-) TimerEvent: {}
+[11.249574] (-) TimerEvent: {}
+[11.350012] (-) TimerEvent: {}
+[11.450447] (-) TimerEvent: {}
+[11.550889] (-) TimerEvent: {}
+[11.651317] (-) TimerEvent: {}
+[11.751755] (-) TimerEvent: {}
+[11.852174] (-) TimerEvent: {}
+[11.952606] (-) TimerEvent: {}
+[12.053043] (-) TimerEvent: {}
+[12.153465] (-) TimerEvent: {}
+[12.253908] (-) TimerEvent: {}
+[12.354335] (-) TimerEvent: {}
+[12.454780] (-) TimerEvent: {}
+[12.555208] (-) TimerEvent: {}
+[12.655561] (-) TimerEvent: {}
+[12.755972] (-) TimerEvent: {}
+[12.856403] (-) TimerEvent: {}
+[12.956849] (-) TimerEvent: {}
+[13.057288] (-) TimerEvent: {}
+[13.157741] (-) TimerEvent: {}
+[13.258198] (-) TimerEvent: {}
+[13.358647] (-) TimerEvent: {}
+[13.459087] (-) TimerEvent: {}
+[13.559531] (-) TimerEvent: {}
+[13.659875] (-) TimerEvent: {}
+[13.760287] (-) TimerEvent: {}
+[13.860709] (-) TimerEvent: {}
+[13.961129] (-) TimerEvent: {}
+[14.061556] (-) TimerEvent: {}
+[14.161967] (-) TimerEvent: {}
+[14.262376] (-) TimerEvent: {}
+[14.362715] (-) TimerEvent: {}
+[14.463126] (-) TimerEvent: {}
+[14.563548] (-) TimerEvent: {}
+[14.663960] (-) TimerEvent: {}
+[14.764375] (-) TimerEvent: {}
+[14.864807] (-) TimerEvent: {}
+[14.965209] (-) TimerEvent: {}
+[15.065655] (-) TimerEvent: {}
+[15.166068] (-) TimerEvent: {}
+[15.266499] (-) TimerEvent: {}
+[15.366910] (-) TimerEvent: {}
+[15.467328] (-) TimerEvent: {}
+[15.567769] (-) TimerEvent: {}
+[15.668179] (-) TimerEvent: {}
+[15.768593] (-) TimerEvent: {}
+[15.869005] (-) TimerEvent: {}
+[15.969420] (-) TimerEvent: {}
+[16.069854] (-) TimerEvent: {}
+[16.170268] (-) TimerEvent: {}
+[16.270685] (-) TimerEvent: {}
+[16.371109] (-) TimerEvent: {}
+[16.471532] (-) TimerEvent: {}
+[16.571937] (-) TimerEvent: {}
+[16.672347] (-) TimerEvent: {}
+[16.772783] (-) TimerEvent: {}
+[16.873215] (-) TimerEvent: {}
+[16.973621] (-) TimerEvent: {}
+[17.074043] (-) TimerEvent: {}
+[17.174451] (-) TimerEvent: {}
+[17.274873] (-) TimerEvent: {}
+[17.375291] (-) TimerEvent: {}
+[17.475713] (-) TimerEvent: {}
+[17.576133] (-) TimerEvent: {}
+[17.676552] (-) TimerEvent: {}
+[17.776965] (-) TimerEvent: {}
+[17.877379] (-) TimerEvent: {}
+[17.977812] (-) TimerEvent: {}
+[18.078232] (-) TimerEvent: {}
+[18.178685] (-) TimerEvent: {}
+[18.279088] (-) TimerEvent: {}
+[18.379519] (-) TimerEvent: {}
+[18.479929] (-) TimerEvent: {}
+[18.580348] (-) TimerEvent: {}
+[18.680785] (-) TimerEvent: {}
+[18.781204] (-) TimerEvent: {}
+[18.881624] (-) TimerEvent: {}
+[18.982035] (-) TimerEvent: {}
+[19.082462] (-) TimerEvent: {}
+[19.182890] (-) TimerEvent: {}
+[19.283311] (-) TimerEvent: {}
+[19.383748] (-) TimerEvent: {}
+[19.484175] (-) TimerEvent: {}
+[19.584583] (-) TimerEvent: {}
+[19.684998] (-) TimerEvent: {}
+[19.785410] (-) TimerEvent: {}
+[19.885843] (-) TimerEvent: {}
+[19.986257] (-) TimerEvent: {}
+[20.086676] (-) TimerEvent: {}
+[20.187092] (-) TimerEvent: {}
+[20.287533] (-) TimerEvent: {}
+[20.387950] (-) TimerEvent: {}
+[20.488368] (-) TimerEvent: {}
+[20.588801] (-) TimerEvent: {}
+[20.689212] (-) TimerEvent: {}
+[20.789637] (-) TimerEvent: {}
+[20.890063] (-) TimerEvent: {}
+[20.990508] (-) TimerEvent: {}
+[21.090923] (-) TimerEvent: {}
+[21.191353] (-) TimerEvent: {}
+[21.291793] (-) TimerEvent: {}
+[21.392222] (-) TimerEvent: {}
+[21.492631] (-) TimerEvent: {}
+[21.593061] (-) TimerEvent: {}
+[21.693474] (-) TimerEvent: {}
+[21.793884] (-) TimerEvent: {}
+[21.894304] (-) TimerEvent: {}
+[21.994729] (-) TimerEvent: {}
+[22.095157] (-) TimerEvent: {}
+[22.195576] (-) TimerEvent: {}
+[22.295989] (-) TimerEvent: {}
+[22.396408] (-) TimerEvent: {}
+[22.496839] (-) TimerEvent: {}
+[22.597262] (-) TimerEvent: {}
+[22.697682] (-) TimerEvent: {}
+[22.798095] (-) TimerEvent: {}
+[22.898518] (-) TimerEvent: {}
+[22.998935] (-) TimerEvent: {}
+[23.099353] (-) TimerEvent: {}
+[23.199786] (-) TimerEvent: {}
+[23.300203] (-) TimerEvent: {}
+[23.400621] (-) TimerEvent: {}
+[23.501029] (-) TimerEvent: {}
+[23.601457] (-) TimerEvent: {}
+[23.701876] (-) TimerEvent: {}
+[23.802291] (-) TimerEvent: {}
+[23.902735] (-) TimerEvent: {}
+[24.003159] (-) TimerEvent: {}
+[24.103579] (-) TimerEvent: {}
+[24.204010] (-) TimerEvent: {}
+[24.304439] (-) TimerEvent: {}
+[24.404884] (-) TimerEvent: {}
+[24.505302] (-) TimerEvent: {}
+[24.605728] (-) TimerEvent: {}
+[24.706073] (-) TimerEvent: {}
+[24.806514] (-) TimerEvent: {}
+[24.906937] (-) TimerEvent: {}
+[25.007296] (-) TimerEvent: {}
+[25.107736] (-) TimerEvent: {}
+[25.208180] (-) TimerEvent: {}
+[25.308609] (-) TimerEvent: {}
+[25.361461] (eva_planning) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable eva_planning_node\x1b[0m\n'}
+[25.408862] (-) TimerEvent: {}
+[25.509321] (-) TimerEvent: {}
+[25.609806] (-) TimerEvent: {}
+[25.710289] (-) TimerEvent: {}
+[25.739473] (eva_planning) StdoutLine: {'line': b'[100%] Built target eva_planning_node\n'}
+[25.755263] (eva_planning) CommandEnded: {'returncode': 0}
+[25.756449] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'install'}
+[25.770788] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ziko/ros2_ws/build/eva_planning'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ziko/ros2_ws/install/eva_planning/lib:/home/ziko/ros2_ws1/install/eva_planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '21610'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ziko/ros2_ws/install:/home/ziko/ros2_ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/1942,unix/ziko-Latitude-5430:/tmp/.ICE-unix/1942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6932fa64_6ffe_4251_b293_a13c181c1b93'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E96EJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ziko/ros2_ws/install/eva_planning:/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ziko/ros2_ws/install/eva_planning:/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble')]), 'shell': False}
+[25.779894] (eva_planning) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.780192] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a\n'}
+[25.780329] (eva_planning) StdoutLine: {'line': b'-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node\n'}
+[25.781971] (eva_planning) StdoutLine: {'line': b'-- Set runtime path of "/home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node" to ""\n'}
+[25.782190] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include/\n'}
+[25.782272] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning\n'}
+[25.782343] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp\n'}
+[25.782409] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp\n'}
+[25.782472] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp\n'}
+[25.782549] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp\n'}
+[25.782611] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch\n'}
+[25.782672] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py\n'}
+[25.782735] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py\n'}
+[25.782799] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config\n'}
+[25.783038] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml\n'}
+[25.783243] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py\n'}
+[25.783319] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py\n'}
+[25.783385] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh\n'}
+[25.783449] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv\n'}
+[25.783521] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning\n'}
+[25.783580] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning\n'}
+[25.783636] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh\n'}
+[25.783693] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv\n'}
+[25.783747] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh\n'}
+[25.783803] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv\n'}
+[25.783857] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash\n'}
+[25.783916] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh\n'}
+[25.783972] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh\n'}
+[25.784025] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv\n'}
+[25.784079] (eva_planning) StdoutLine: {'line': b'-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv\n'}
+[25.784140] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning\n'}
+[25.784192] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.784247] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.784299] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake\n'}
+[25.784406] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake\n'}
+[25.784590] (eva_planning) StdoutLine: {'line': b'-- Up-to-date: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml\n'}
+[25.785552] (eva_planning) CommandEnded: {'returncode': 0}
+[25.803547] (eva_planning) JobEnded: {'identifier': 'eva_planning', 'rc': 0}
+[25.804170] (-) EventReactorShutdown: {}

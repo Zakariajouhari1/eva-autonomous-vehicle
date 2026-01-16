@@ -1,0 +1,93 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+-- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ziko/ros2_ws/build/eva_planning
+[ 25%] [32mBuilding CXX object CMakeFiles/cubic_spline_planner.dir/src/cubic_spline_planner.cpp.o[0m
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<eva_planning::Point2D> eva_planning::CubicSplinePlanner::generateLocalTrajectory(const eva_planning::Point2D&, double, const std::vector<eva_planning::Point2D>&, const std::vector<eva_planning::Obstacle>&)[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:105:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_heading[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  105 |     const Point2D& current_pos, [01;35m[Kdouble current_heading[m[K,
+      |                                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX static library libcubic_spline_planner.a[0m
+[ 50%] Built target cubic_spline_planner
+[ 75%] [32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o[0m
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:[m[K In member function ‘[01m[Kvoid EVAPlanningNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:132:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  132 |     void mapCallback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K) {
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable eva_planning_node[0m
+[100%] Built target eva_planning_node
+-- Install configuration: ""
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+-- Set runtime path of "/home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node" to ""
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include/
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+-- Installing: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml

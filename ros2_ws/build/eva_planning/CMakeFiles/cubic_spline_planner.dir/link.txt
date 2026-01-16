@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcubic_spline_planner.a CMakeFiles/cubic_spline_planner.dir/src/cubic_spline_planner.cpp.o
+/usr/bin/ranlib libcubic_spline_planner.a

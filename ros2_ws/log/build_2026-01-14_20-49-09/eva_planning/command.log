@@ -1,0 +1,4 @@
+Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ziko/ros2_ws/src/eva_planning -DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning
+Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ziko/ros2_ws/src/eva_planning -DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning
+Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12

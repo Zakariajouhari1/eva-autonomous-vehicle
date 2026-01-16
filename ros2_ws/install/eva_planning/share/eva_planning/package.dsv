@@ -1,0 +1,8 @@
+source;share/eva_planning/hook/cmake_prefix_path.ps1
+source;share/eva_planning/hook/cmake_prefix_path.dsv
+source;share/eva_planning/hook/cmake_prefix_path.sh
+source;share/eva_planning/local_setup.bash
+source;share/eva_planning/local_setup.dsv
+source;share/eva_planning/local_setup.ps1
+source;share/eva_planning/local_setup.sh
+source;share/eva_planning/local_setup.zsh

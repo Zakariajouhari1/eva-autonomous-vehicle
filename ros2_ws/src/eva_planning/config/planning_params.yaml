@@ -1,0 +1,22 @@
+eva_planning_node:
+  ros__parameters:
+    # Update rates (Hz)
+    global_planner_rate: 1.0
+    local_planner_rate: 10.0
+    
+    # Map parameters
+    map_resolution: 0.5
+    robot_radius: 1.0
+    
+    # Global planner (A*)
+    heuristic_type: "euclidean"
+    
+    # Local planner (Spline)
+    max_speed: 5.0
+    max_acceleration: 2.0
+    max_curvature: 1.0
+    lookahead_distance: 10.0
+    path_resolution: 0.1
+    
+    # Obstacle avoidance
+    obstacle_avoidance_radius: 2.0

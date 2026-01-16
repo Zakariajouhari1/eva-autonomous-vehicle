@@ -1,0 +1,191 @@
+[0.000000] (-) TimerEvent: {}
+[0.000707] (eva_planning) JobQueued: {'identifier': 'eva_planning', 'dependencies': OrderedDict()}
+[0.000780] (eva_planning) JobStarted: {'identifier': 'eva_planning'}
+[0.009429] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'cmake'}
+[0.010040] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '/home/ziko/ros2_ws/src/eva_planning', '-DCMAKE_INSTALL_PREFIX=/home/ziko/ros2_ws/install/eva_planning'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ziko/ros2_ws1/install/eva_planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko/ros2_ws/src/eva_planning'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1982'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ziko/ros2_ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/1942,unix/ziko-Latitude-5430:/tmp/.ICE-unix/1942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/60ad0562_4f0d_4e47_a96d_ae5f2d6c4fea'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E96EJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble')]), 'shell': False}
+[0.099482] (-) TimerEvent: {}
+[0.112329] (eva_planning) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.187853] (eva_planning) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.196691] (eva_planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199609] (-) TimerEvent: {}
+[0.286607] (eva_planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.296168] (eva_planning) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.296524] (eva_planning) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.296817] (eva_planning) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.299725] (-) TimerEvent: {}
+[0.300447] (eva_planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399885] (-) TimerEvent: {}
+[0.400889] (eva_planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.412612] (eva_planning) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.412925] (eva_planning) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.413778] (eva_planning) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.418127] (eva_planning) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500113] (-) TimerEvent: {}
+[0.600476] (-) TimerEvent: {}
+[0.609030] (eva_planning) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700704] (-) TimerEvent: {}
+[0.711077] (eva_planning) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.756061] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.761578] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.770531] (eva_planning) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.783270] (eva_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800347] (eva_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800766] (-) TimerEvent: {}
+[0.845938] (eva_planning) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.848603] (eva_planning) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900921] (-) TimerEvent: {}
+[0.951337] (eva_planning) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.985177] (eva_planning) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.001161] (-) TimerEvent: {}
+[1.031127] (eva_planning) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.040346] (eva_planning) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101424] (-) TimerEvent: {}
+[1.127183] (eva_planning) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.127863] (eva_planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201598] (-) TimerEvent: {}
+[1.227142] (eva_planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.229105] (eva_planning) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.288559] (eva_planning) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.301829] (-) TimerEvent: {}
+[1.321457] (eva_planning) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.341204] (eva_planning) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.373689] (eva_planning) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.388197] (eva_planning) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.402179] (eva_planning) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.402616] (-) TimerEvent: {}
+[1.403869] (eva_planning) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.404011] (eva_planning) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.502829] (-) TimerEvent: {}
+[1.603156] (-) TimerEvent: {}
+[1.614467] (eva_planning) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.619394] (eva_planning) StdoutLine: {'line': b'-- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") \n'}
+[1.701796] (eva_planning) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.703389] (-) TimerEvent: {}
+[1.717235] (eva_planning) StdoutLine: {'line': b'-- Generating done\n'}
+[1.723067] (eva_planning) StdoutLine: {'line': b'-- Build files have been written to: /home/ziko/ros2_ws/build/eva_planning\n'}
+[1.735434] (eva_planning) CommandEnded: {'returncode': 0}
+[1.736435] (eva_planning) JobProgress: {'identifier': 'eva_planning', 'progress': 'build'}
+[1.738608] (eva_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ziko/ros2_ws/build/eva_planning', '--', '-j12', '-l12'], 'cwd': '/home/ziko/ros2_ws/build/eva_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ziko'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ziko/ros2_ws1/install/eva_planning/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ziko'), ('OLDPWD', '/home/ziko/ros2_ws/src/eva_planning'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1982'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ziko/ros2_ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ziko'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ziko'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ziko/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ziko-Latitude-5430:@/tmp/.ICE-unix/1942,unix/ziko-Latitude-5430:/tmp/.ICE-unix/1942'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/60ad0562_4f0d_4e47_a96d_ae5f2d6c4fea'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E96EJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ziko/ros2_ws/build/eva_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ziko/ros2_ws1/install/eva_planning:/opt/ros/humble')]), 'shell': False}
+[1.803575] (-) TimerEvent: {}
+[1.806999] (eva_planning) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cubic_spline_planner.dir/src/cubic_spline_planner.cpp.o\x1b[0m\n'}
+[1.903807] (-) TimerEvent: {}
+[2.004264] (-) TimerEvent: {}
+[2.103200] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<eva_planning::Point2D> eva_planning::CubicSplinePlanner::generateLocalTrajectory(const eva_planning::Point2D&, double, const std::vector<eva_planning::Point2D>&, const std::vector<eva_planning::Obstacle>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.103602] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/cubic_spline_planner.cpp:105:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcurrent_heading\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.103717] (eva_planning) StderrLine: {'line': b'  105 |     const Point2D& current_pos, \x1b[01;35m\x1b[Kdouble current_heading\x1b[m\x1b[K,\n'}
+[2.103803] (eva_planning) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.104338] (-) TimerEvent: {}
+[2.204732] (-) TimerEvent: {}
+[2.305196] (-) TimerEvent: {}
+[2.341695] (eva_planning) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libcubic_spline_planner.a\x1b[0m\n'}
+[2.405537] (-) TimerEvent: {}
+[2.506198] (-) TimerEvent: {}
+[2.510315] (eva_planning) StdoutLine: {'line': b'[ 50%] Built target cubic_spline_planner\n'}
+[2.538754] (eva_planning) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o\x1b[0m\n'}
+[2.606378] (-) TimerEvent: {}
+[2.706837] (-) TimerEvent: {}
+[2.807571] (-) TimerEvent: {}
+[2.908461] (-) TimerEvent: {}
+[3.009119] (-) TimerEvent: {}
+[3.109578] (-) TimerEvent: {}
+[3.210003] (-) TimerEvent: {}
+[3.310430] (-) TimerEvent: {}
+[3.410862] (-) TimerEvent: {}
+[3.511302] (-) TimerEvent: {}
+[3.611637] (-) TimerEvent: {}
+[3.712062] (-) TimerEvent: {}
+[3.812491] (-) TimerEvent: {}
+[3.912926] (-) TimerEvent: {}
+[4.013354] (-) TimerEvent: {}
+[4.113787] (-) TimerEvent: {}
+[4.214218] (-) TimerEvent: {}
+[4.314673] (-) TimerEvent: {}
+[4.415097] (-) TimerEvent: {}
+[4.515550] (-) TimerEvent: {}
+[4.615922] (-) TimerEvent: {}
+[4.716358] (-) TimerEvent: {}
+[4.816799] (-) TimerEvent: {}
+[4.917238] (-) TimerEvent: {}
+[5.017600] (-) TimerEvent: {}
+[5.117994] (-) TimerEvent: {}
+[5.218480] (-) TimerEvent: {}
+[5.318944] (-) TimerEvent: {}
+[5.419550] (-) TimerEvent: {}
+[5.520356] (-) TimerEvent: {}
+[5.621144] (-) TimerEvent: {}
+[5.721828] (-) TimerEvent: {}
+[5.822435] (-) TimerEvent: {}
+[5.923049] (-) TimerEvent: {}
+[6.023579] (-) TimerEvent: {}
+[6.043392] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KEVAPlanningNode::EVAPlanningNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.043686] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:68:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmapCallback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KEVAPlanningNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.043823] (eva_planning) StderrLine: {'line': b'   68 |             std::bind(&EVAPlanningNode::\x1b[01;31m\x1b[KmapCallback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[6.043948] (eva_planning) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.055518] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:32:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmap_res\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.055815] (eva_planning) StderrLine: {'line': b'   32 |         double \x1b[01;35m\x1b[Kmap_res\x1b[m\x1b[K = this->get_parameter("map_resolution").as_double();\n'}
+[6.055945] (eva_planning) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.056056] (eva_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ziko/ros2_ws/src/eva_planning/src/eva_planning_node.cpp:33:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Krobot_radius\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.056170] (eva_planning) StderrLine: {'line': b'   33 |         double \x1b[01;35m\x1b[Krobot_radius\x1b[m\x1b[K = this->get_parameter("robot_radius").as_double();\n'}
+[6.056291] (eva_planning) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.123783] (-) TimerEvent: {}
+[6.224392] (-) TimerEvent: {}
+[6.324923] (-) TimerEvent: {}
+[6.425386] (-) TimerEvent: {}
+[6.525903] (-) TimerEvent: {}
+[6.626421] (-) TimerEvent: {}
+[6.726926] (-) TimerEvent: {}
+[6.827480] (-) TimerEvent: {}
+[6.928091] (-) TimerEvent: {}
+[7.028551] (-) TimerEvent: {}
+[7.128988] (-) TimerEvent: {}
+[7.229540] (-) TimerEvent: {}
+[7.330066] (-) TimerEvent: {}
+[7.430447] (-) TimerEvent: {}
+[7.530822] (-) TimerEvent: {}
+[7.631227] (-) TimerEvent: {}
+[7.731577] (-) TimerEvent: {}
+[7.831995] (-) TimerEvent: {}
+[7.932423] (-) TimerEvent: {}
+[8.032782] (-) TimerEvent: {}
+[8.133217] (-) TimerEvent: {}
+[8.233670] (-) TimerEvent: {}
+[8.334094] (-) TimerEvent: {}
+[8.434533] (-) TimerEvent: {}
+[8.534963] (-) TimerEvent: {}
+[8.635438] (-) TimerEvent: {}
+[8.735914] (-) TimerEvent: {}
+[8.836487] (-) TimerEvent: {}
+[8.937110] (-) TimerEvent: {}
+[9.037693] (-) TimerEvent: {}
+[9.138228] (-) TimerEvent: {}
+[9.238696] (-) TimerEvent: {}
+[9.339166] (-) TimerEvent: {}
+[9.439650] (-) TimerEvent: {}
+[9.540049] (-) TimerEvent: {}
+[9.640501] (-) TimerEvent: {}
+[9.740999] (-) TimerEvent: {}
+[9.841486] (-) TimerEvent: {}
+[9.942047] (-) TimerEvent: {}
+[10.042576] (-) TimerEvent: {}
+[10.143042] (-) TimerEvent: {}
+[10.243502] (-) TimerEvent: {}
+[10.343982] (-) TimerEvent: {}
+[10.444455] (-) TimerEvent: {}
+[10.544938] (-) TimerEvent: {}
+[10.645409] (-) TimerEvent: {}
+[10.745771] (-) TimerEvent: {}
+[10.846225] (-) TimerEvent: {}
+[10.946636] (-) TimerEvent: {}
+[11.047022] (-) TimerEvent: {}
+[11.147451] (-) TimerEvent: {}
+[11.247887] (-) TimerEvent: {}
+[11.348241] (-) TimerEvent: {}
+[11.448608] (-) TimerEvent: {}
+[11.548996] (-) TimerEvent: {}
+[11.625400] (eva_planning) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/eva_planning_node.dir/build.make:76: CMakeFiles/eva_planning_node.dir/src/eva_planning_node.cpp.o] Error 1\n'}
+[11.625733] (eva_planning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/eva_planning_node.dir/all] Error 2\n'}
+[11.625950] (eva_planning) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.628500] (eva_planning) CommandEnded: {'returncode': 2}
+[11.639973] (eva_planning) JobEnded: {'identifier': 'eva_planning', 'rc': 2}
+[11.649143] (-) TimerEvent: {}
+[11.650984] (-) EventReactorShutdown: {}

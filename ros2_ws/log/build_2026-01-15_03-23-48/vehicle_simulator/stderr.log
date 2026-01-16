@@ -1,0 +1,5 @@
+  File "/home/ziko/ros2_ws/install/vehicle_simulator/lib/python3.10/site-packages/vehicle_simulator/vehicle_simulator.py", line 18
+    // État de l'interface
+                ^
+SyntaxError: unterminated string literal (detected at line 18)
+

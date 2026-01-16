@@ -1,0 +1,40 @@
+[0.009s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziko/ros2_ws/install/vehicle_simulator:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[0.079s] [ 50%] Built target cubic_spline_planner
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target eva_planning_node[0m
+[0.133s] [ 75%] [32m[1mLinking CXX executable eva_planning_node[0m
+[0.414s] [100%] Built target eva_planning_node
+[0.424s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziko/ros2_ws/install/vehicle_simulator:/opt/ros/humble /usr/bin/cmake --build /home/ziko/ros2_ws/build/eva_planning -- -j12 -l12
+[0.433s] Invoking command in '/home/ziko/ros2_ws/build/eva_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziko/ros2_ws/install/vehicle_simulator:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning
+[0.441s] -- Install configuration: ""
+[0.441s] -- Execute custom install script
+[0.441s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/libcubic_spline_planner.a
+[0.448s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_planning_node
+[0.457s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/astar_planner.hpp
+[0.466s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/coordinate_converter.hpp
+[0.473s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/cubic_spline_planner.hpp
+[0.482s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/include//eva_planning/osrm_client.hpp
+[0.491s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/eva_planning.launch.py
+[0.499s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//launch/test_planning.launch.py
+[0.509s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning//config/planning_params.yaml
+[0.520s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/eva_test_generator.py
+[0.531s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/lib/eva_planning/planning_monitor.py
+[0.538s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.sh
+[0.546s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/library_path.dsv
+[0.554s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/package_run_dependencies/eva_planning
+[0.561s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/parent_prefix_path/eva_planning
+[0.569s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.sh
+[0.577s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/ament_prefix_path.dsv
+[0.585s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.sh
+[0.593s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/environment/path.dsv
+[0.601s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.bash
+[0.608s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.sh
+[0.616s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.zsh
+[0.624s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/local_setup.dsv
+[0.633s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.dsv
+[0.639s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/ament_index/resource_index/packages/eva_planning
+[0.648s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.656s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[0.665s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig.cmake
+[0.673s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/cmake/eva_planningConfig-version.cmake
+[0.681s] -- Symlinking: /home/ziko/ros2_ws/install/eva_planning/share/eva_planning/package.xml
+[0.691s] Invoked command in '/home/ziko/ros2_ws/build/eva_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziko/ros2_ws/install/vehicle_simulator:/opt/ros/humble /usr/bin/cmake --install /home/ziko/ros2_ws/build/eva_planning

@@ -1,0 +1,3 @@
+[console_scripts]
+vehicle_simulator = vehicle_simulator.vehicle_simulator:main
+
