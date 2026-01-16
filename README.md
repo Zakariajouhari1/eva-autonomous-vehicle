@@ -13,7 +13,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Docs/Demo.mp
 
 ## 🎥 Demo Video
 
-<iframe src="https://player.vimeo.com/video/1155126332?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1360" height="768" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Demo"></iframe>
+https://vimeo.com/1155126332?fl=ip&fe=ec
 
 
 ---
