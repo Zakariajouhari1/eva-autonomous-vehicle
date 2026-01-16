@@ -32,7 +32,7 @@ https://github.com/user-attachments/assets/YOUR_VIDEO_ID_HERE
 ## 🏗️ System Architecture
 
 <div align="center">
-  <img src="docs/images/architecture.png" alt="EVA System Architecture" width="800"/>
+  <img src="docs/images/Architecture.png" alt="EVA System Architecture" width="800"/>
   <p><i>Complete system architecture showing all components and communication flow</i></p>
 </div>
 
