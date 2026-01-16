@@ -212,10 +212,6 @@ eva-autonomous-vehicle/
 | Memory Usage | ~150 MB |
 | CPU Usage | <10% |
 
-<div align="center">
-  <img src="docs/images/performance_chart.png" alt="Performance Metrics" width="600"/>
-</div>
-
 ---
 
 ## 🔧 Configuration
@@ -318,17 +314,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-
-### ⭐ Star this repo if you find it useful!
-
-**Built with ❤️ for autonomous vehicles research**
-
-[Report Bug](https://github.com/YOUR_USERNAME/eva-autonomous-vehicle/issues) · [Request Feature](https://github.com/YOUR_USERNAME/eva-autonomous-vehicle/issues)
-
-</div>
-
----
 
 ## 📚 Related Projects
 
