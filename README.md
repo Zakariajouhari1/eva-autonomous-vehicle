@@ -7,42 +7,119 @@
 
 **EVA** (Electric Vehicle Assistant) is a complete autonomous navigation system combining a ROS2-based trajectory planning module with a professional Qt6/QML HMI interface.
 
-![EVA Demo](docs/images/eva_demo.png)
+> 🔄 **This project is an enhanced version of** [eva_trajectory_planning](https://github.com/Zakariajouhari1/eva_trajectory_planning) - A trajectory planning system for autonomous vehicles using A* and Cubic Splines. EVA v2.0 adds a professional HMI interface and complete system integration.
+
+---
+
+## 🎥 Demo Video
+
+Watch EVA in action! Click below to see the complete navigation system working in real-time:
+https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
+
+<!-- Alternative si la vidéo est dans le repo -->
+<div align="center">
+  <video src="Demo.mkv" width="800" controls>
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Ou avec un GIF si vous en créez un -->
+![EVA Demo](Docs/images/Architecture.png)
+
+---
+
+## 🏗️ System Architecture
+
+<div align="center">
+  <img src="docs/images/Architecture.png" alt="EVA System Architecture" width="800"/>
+  <p><i>Complete system architecture showing all components and communication flow</i></p>
+</div>
+
+The system consists of three main modules:
+
+```
+┌──────────────────────┐
+│   EVA Planning      │
+│   (ROS2 + OSRM)     │
+└──────────┬───────────┘
+           │ ROS2 Topics
+           ├──────────────────────┐
+           │                      │
+┌──────────▼──────────────┐  ┌───────▼────────────┐
+│  Vehicle HMI        │  │   Simulator    │
+│  (Qt6 + QML)        │  │   (Python)     │
+└─────────────────────┘  └────────────────┘
+```
+
+### Component Breakdown
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| **Planning Node** | ROS2 + C++17 | Global path planning with OSRM, cubic spline smoothing |
+| **Vehicle HMI** | Qt6 + QML | Professional dashboard with real-time visualization |
+| **Simulator** | Python + ROS2 | Physics-based vehicle simulation for testing |
+
+<div align="center">
+  <img src="docs/images/hmi_screenshot.png" alt="EVA HMI Interface" width="600"/>
+  <p><i>Professional Qt6/QML interface with real-time navigation</i></p>
+</div>
+
+---
 
 ## ✨ Features
 
 ### 🗺️ Trajectory Planning (ROS2)
 - **OSRM Integration**: Real-world road routing using OpenStreetMap
-- **Cubic Spline Smoothing**: Local trajectory refinement
+- **A* Global Planning**: Optimal path finding on road networks
+- **Cubic Spline Smoothing**: Local trajectory refinement for comfort
 - **GPS ↔ Local Conversion**: Accurate coordinate transformation
 - **Real-time Planning**: ~100-300ms computation time
+
+<div align="center">
+  <img src="docs/images/trajectory_planning.png" alt="Trajectory Planning" width="500"/>
+</div>
 
 ### 🖥️ Professional HMI (Qt6/QML)
 - **Interactive Map**: OpenStreetMap with route visualization
 - **Real-time Dashboard**: Speed, battery, vehicle status
 - **Responsive Design**: Adapts to any screen size
 - **Live Navigation**: Distance, ETA, progress tracking
+- **Modern UI/UX**: Professional automotive-grade interface
+
+<div align="center">
+  <img src="docs/images/dashboard.png" alt="Vehicle Dashboard" width="500"/>
+</div>
 
 ### 🚙 Vehicle Simulator
 - **Physics-based**: Realistic acceleration and movement
 - **Path Following**: Automatic trajectory tracking
 - **Odometry Publishing**: Real-time position updates
+- **Configurable Parameters**: Speed, acceleration, vehicle dynamics
 
-## 📦 Architecture
+---
 
-```
-┌─────────────────────┐
-│   EVA Planning      │
-│   (ROS2 + OSRM)     │
-└──────────┬──────────┘
-           │ ROS2 Topics
-           ├──────────────────────┐
-           │                      │
-┌──────────▼──────────┐  ┌───────▼────────┐
-│  Vehicle HMI        │  │   Simulator    │
-│  (Qt6 + QML)        │  │   (Python)     │
-└─────────────────────┘  └────────────────┘
-```
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td><img src="docs/images/map_view.png" alt="Map View" width="400"/></td>
+    <td><img src="docs/images/route_info.png" alt="Route Info" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Interactive Map View</b></td>
+    <td align="center"><b>Route Information Panel</b></td>
+  </tr>
+  <tr>
+    <td><img src="docs/images/vehicle_status.png" alt="Vehicle Status" width="400"/></td>
+    <td><img src="docs/images/navigation_active.png" alt="Navigation" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Vehicle Status Panel</b></td>
+    <td align="center"><b>Active Navigation</b></td>
+  </tr>
+</table>
+
+---
 
 ## 🚀 Quick Start
 
@@ -101,12 +178,18 @@ cd vehicle_hmi/build
 ./appVehicle_HMI
 ```
 
+---
+
 ## 📖 Usage
 
 1. **Launch all 3 terminals** as shown above
 2. **Click on the map** to set a destination
 3. **Watch the vehicle** follow the calculated route
 4. **Monitor metrics**: Speed, distance, ETA in real-time
+
+![Usage Flow](docs/images/usage_flow.png)
+
+---
 
 ## 🗂️ Project Structure
 
@@ -143,6 +226,9 @@ eva-autonomous-vehicle/
 │
 ├── docs/                          # Documentation
 │   ├── images/
+│   │   ├── architecture.png
+│   │   ├── demo.gif
+│   │   └── screenshots/
 │   ├── architecture.md
 │   └── api.md
 │
@@ -154,6 +240,24 @@ eva-autonomous-vehicle/
 ├── LICENSE
 └── .gitignore
 ```
+
+---
+
+## 📊 Performance
+
+| Metric | Value |
+|--------|-------|
+| Planning Time | 100-300 ms |
+| Update Rate | 10 Hz |
+| Map Rendering | 60 FPS |
+| Memory Usage | ~150 MB |
+| CPU Usage | <10% |
+
+<div align="center">
+  <img src="docs/images/performance_chart.png" alt="Performance Metrics" width="600"/>
+</div>
+
+---
 
 ## 🔧 Configuration
 
@@ -180,15 +284,7 @@ property double originLat: 33.5731
 property double originLon: -7.5898
 ```
 
-## 📊 Performance
-
-| Metric | Value |
-|--------|-------|
-| Planning Time | 100-300 ms |
-| Update Rate | 10 Hz |
-| Map Rendering | 60 FPS |
-| Memory Usage | ~150 MB |
-| CPU Usage | <10% |
+---
 
 ## 🤝 Contributing
 
@@ -200,6 +296,8 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
 ## 📝 Changelog
 
 ### v2.0.0 (2025-01-15) - Current
@@ -208,16 +306,23 @@ Contributions are welcome! Please follow these steps:
 - ✅ Real-time navigation metrics
 - ✅ Vehicle simulator with physics
 - ✅ Improved OSRM integration
+- ✅ Professional automotive-grade interface
 
 ### v1.0.0 (2024)
 - Initial trajectory planning module
 - Basic OSRM integration
+- A* global path planning
+- Cubic spline local planning
+
+---
 
 ## 🐛 Known Issues
 
 - [ ] Offline OSRM server not included (uses public API)
 - [ ] No obstacle detection from sensors yet
 - [ ] Single vehicle only (no multi-agent)
+
+---
 
 ## 🛣️ Roadmap
 
@@ -227,15 +332,22 @@ Contributions are welcome! Please follow these steps:
 - [ ] **Cloud Sync**: Multi-device synchronization
 - [ ] **Voice Commands**: Natural language interface
 - [ ] **Fleet Management**: Multi-vehicle coordination
+- [ ] **Machine Learning**: Predictive route optimization
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 👥 Authors
 
-- Zakaria JOuhari
-- Mohamed Elhaloua
+- **Zakaria Jouhari** - *Planning & Integration* - [@Zakariajouhari1](https://github.com/Zakariajouhari1)
+- **Mohamed Elhaloua** - *HMI Development* - [@MOHAMEDELHALOUA](https://github.com/MOHAMEDELHALOUA)
+
+---
 
 ## 🙏 Acknowledgments
 
@@ -243,11 +355,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [OSRM](http://project-osrm.org/) - Open Source Routing Machine
 - [Qt](https://www.qt.io/) - Cross-platform framework
 - [OpenStreetMap](https://www.openstreetmap.org/) - Map data
-
-
+- [Previous version](https://github.com/Zakariajouhari1/eva_trajectory_planning) - Foundation for this project
 
 ---
 
-⭐ **Star this repo** if you find it useful!
+<div align="center">
 
-**Previous Version**: [eva_trajectory_planning v1.0](https://github.com/Zakariajouhari1/eva_trajectory_planning)
+### ⭐ Star this repo if you find it useful!
+
+**Built with ❤️ for autonomous vehicles research**
+
+[Report Bug](https://github.com/YOUR_USERNAME/eva-autonomous-vehicle/issues) · [Request Feature](https://github.com/YOUR_USERNAME/eva-autonomous-vehicle/issues)
+
+</div>
+
+---
+
+## 📚 Related Projects
+
+- [eva_trajectory_planning v1.0](https://github.com/Zakariajouhari1/eva_trajectory_planning) - Original trajectory planning system
+- [Vehicle_HMI_QT_QML](https://github.com/MOHAMEDELHALOUA/Vehicle_HMI_QT_QML) - HMI component repository
