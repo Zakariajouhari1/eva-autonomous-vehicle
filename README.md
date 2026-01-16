@@ -19,7 +19,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 <!-- Alternative si la vidéo est dans le repo --
 
 <!-- Ou avec un GIF si vous en créez un -->
-[![Watch Demo](docs/media/video-thumb.png)](Docs/Demo.mp4)
+[![Watch Demo](Docs/video-thumb.png)](Docs/Demo.mp4)
 
 
 ---
