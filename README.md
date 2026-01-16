@@ -24,7 +24,7 @@ https://github.com/Zakariajouhari1/eva-autonomous-vehicle/blob/main/Demo.mkv
 </div>
 
 <!-- Ou avec un GIF si vous en créez un -->
-![EVA Demo](Docs/images/Architecture.png)
+![EVA Demo](Docs/Images/Architecture.png)
 
 ---
 
