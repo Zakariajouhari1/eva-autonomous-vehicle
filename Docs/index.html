@@ -1,3 +1,55 @@
-<video autoplay loop muted controls>
-  <source src="Demo.mp4" type="video/mp4">
-</video>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EVA Autonomous Vehicle – Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    video {
+      width: 90%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    img {
+      margin-top: 40px;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>EVA – Autonomous Vehicle Demo</h1>
+  <p>ROS 2 + Qt/QML HMI – Real-time trajectory planning</p>
+
+  <video autoplay muted loop controls playsinline>
+    <source src="Demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+
+</body>
+</html>
